@@ -2,14 +2,12 @@
 #LOAD THE DATASET
 #*******************************************************************
 
-#set working directory
-setwd("C:/Users/Jean/Desktop/capstone CYO project/R working files")
-
 library(tidyverse)
 
 #read in the data file
 library(readxl)
-df <- read_excel("AARPdata_for_capstone.xlsx")
+git_datafile <- 'https://raw.github.com/JeanSinger/Capstone-CYO-Predicting-Loneliness/AARPdata_for_capstone.xlsx'
+df <- read_excel(git_datafile)
 
 #-------------------------------------------------------------------
 #Create and add the variable for Complex Social Integration (CSI)
